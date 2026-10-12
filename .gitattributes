@@ -1,0 +1,11 @@
+* text=auto
+*.dart text eol=lf
+*.kt text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+**/SHA256SUMS.txt text eol=lf
+*.ps1 text eol=crlf
+*.apk -text
+*.png -text
+*.jpg -text

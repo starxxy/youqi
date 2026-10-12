@@ -1,0 +1,16 @@
+name: youqi
+description: 有期：待办、每日时间规划与循环闹钟
+publish_to: none
+version: 0.2.1+3
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true

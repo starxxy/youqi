@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cn.youqi.youqi.AlarmDeliveryTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2026-10-12T04:00:33" hostname="STARYNAS" time="14.806">
+  <properties/>
+  <testcase name="repeatedReconcileKeepsOnlyOneSystemTimerPerDelivery[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="5.255"/>
+  <testcase name="editingPersistentTaskStartDoesNotCreateExtraNotificationItem[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.09"/>
+  <testcase name="reopeningRepairsSystemAlarmsEvenWhenLocalRecordsAreUnchanged[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.116"/>
+  <testcase name="simultaneousStartAndEndRemindersAreBothDelivered[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.188"/>
+  <testcase name="fiveMinuteSnoozeSurvivesRefreshAtItsDeadline[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.161"/>
+  <testcase name="dailyDueRecordDispatchesEvenAfterNextDayIsRegistered[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.14"/>
+  <testcase name="persistentTodoIsSilentUpdatesOnCompletionAndCanBeDisabled[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.226"/>
+  <testcase name="failedServiceStartRetainsDeliveryAndRetriesWithoutConsumingIt[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.212"/>
+  <testcase name="editingDisablingAndCancellingDoNotResurrectOldDeliveries[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.19"/>
+  <testcase name="midnightSummaryIncludesUnmaterializedRepeatsButExcludesFutureAndDeleted[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.042"/>
+  <testcase name="snoozeButtonsRearmAndDeliverFiveThenTenMinutesWithDarkerLevel[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.387"/>
+  <testcase name="eventIsNotDeletedWhenRefreshWinsTheRaceWithBroadcast[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.065"/>
+  <testcase name="allRuleFamiliesRegisterAndDispatchTheirOwnPayloads[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.261"/>
+  <testcase name="completedOccurrenceCancelsEventAndItsSnooze[28]" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.126"/>
+  <testcase name="repeatedReconcileKeepsOnlyOneSystemTimerPerDelivery" classname="cn.youqi.youqi.AlarmDeliveryTest" time="5.687"/>
+  <testcase name="editingPersistentTaskStartDoesNotCreateExtraNotificationItem" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.046"/>
+  <testcase name="reopeningRepairsSystemAlarmsEvenWhenLocalRecordsAreUnchanged" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.075"/>
+  <testcase name="simultaneousStartAndEndRemindersAreBothDelivered" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.118"/>
+  <testcase name="fiveMinuteSnoozeSurvivesRefreshAtItsDeadline" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.091"/>
+  <testcase name="dailyDueRecordDispatchesEvenAfterNextDayIsRegistered" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.099"/>
+  <testcase name="persistentTodoIsSilentUpdatesOnCompletionAndCanBeDisabled" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.114"/>
+  <testcase name="failedServiceStartRetainsDeliveryAndRetriesWithoutConsumingIt" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.115"/>
+  <testcase name="editingDisablingAndCancellingDoNotResurrectOldDeliveries" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.166"/>
+  <testcase name="midnightSummaryIncludesUnmaterializedRepeatsButExcludesFutureAndDeleted" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.03"/>
+  <testcase name="snoozeButtonsRearmAndDeliverFiveThenTenMinutesWithDarkerLevel" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.379"/>
+  <testcase name="eventIsNotDeletedWhenRefreshWinsTheRaceWithBroadcast" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.069"/>
+  <testcase name="allRuleFamiliesRegisterAndDispatchTheirOwnPayloads" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.229"/>
+  <testcase name="completedOccurrenceCancelsEventAndItsSnooze" classname="cn.youqi.youqi.AlarmDeliveryTest" time="0.116"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Robolectric] WARN: Android SDK 36 requires Java 21 (have Java 17). Tests won't be run on SDK 36 unless explicitly requested.
+]]></system-err>
+</testsuite>

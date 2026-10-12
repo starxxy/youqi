@@ -1,0 +1,84 @@
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:24: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("history", bounded.toString()).commit()
+                                                                 ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:62: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+            prefs(c).edit().putString("oneShots",JSONArray(oneShots).toString()).commit()
+                                                                                 ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:76: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("scheduled",successful.toString()).commit()
+                                                                     ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:101: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("fired",JSONArray((fired+fireKey).takeLast(2000)).toString()).commit()
+                                                                                                ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:103: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("oneShots",JSONArray(shots).toString()).commit()
+                                                                          ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:116: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("oneShots",JSONArray(list).toString()).commit();reconcile(c)
+                                                                         ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:119: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("oneShots",JSONArray(jsonList(array(c,"oneShots")).filter { it.optString("key")!=key && it.optString("parentKey")!=key }).toString()).commit()
+                                                                                                                                                                        ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:130: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("oneShots",JSONArray(list).toString()).commit();reconcile(c);log(c,payload.optString("title"),"贪睡，第 ${attempt+1} 次");return true
+                                                                         ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:136: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("skipped",JSONArray(skipped).toString()).commit();reconcile(c)
+                                                                           ~~~~~~~~
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt:157: Warning: Consider using apply() instead; commit writes its data to persistent storage immediately, whereas apply will handle it in the background [ApplySharedPref]
+        prefs(c).edit().putString("state",root.toString()).commit();reconcile(c)
+                                                           ~~~~~~~~
+
+   Explanation for issues of type "ApplySharedPref":
+   Consider using apply() instead of commit on shared preferences. Whereas
+   commit blocks and writes its data to persistent storage immediately, apply
+   will handle it in the background.
+
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\AndroidManifest.xml:14: Warning: The attribute android:dataExtractionRules only applies for Android 12 and higher; since minSdkVersion is API 26 you should also set android:fullBackupContent [DataExtractionRules]
+        android:dataExtractionRules="@xml/data_extraction_rules"
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\res\drawable-v21: Warning: This folder configuration (v21) is unnecessary; minSdkVersion is 26. Merge all the resources in this folder into drawable. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+E:\android-toolchain\work\youqi-delivery-011\android\app\src\main\res\mipmap-hdpi\ic_launcher.png: Warning: The resource R.mipmap.ic_launcher appears to be unused [UnusedResources]
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+0 errors, 13 warnings

@@ -1,0 +1,33 @@
+{
+  "app": "有期",
+  "version": "0.2.1",
+  "versionCode": 3,
+  "applicationId": "cn.youqi.youqi",
+  "minSdk": 26,
+  "targetSdk": 35,
+  "builtOn": "2026-10-12",
+  "flutter": "3.24.5",
+  "dart": "3.5.4",
+  "java": "17",
+  "gradle": "8.9",
+  "agp": "8.5.2",
+  "kotlin": "1.9.24",
+  "apk": "Youqi-0.2.1-preview.apk",
+  "bytes": 51961961,
+  "sha256": "03b6b410a05b42c14176d323a4e2f647967d6c7b57cda6a92427188b8c8443c6",
+  "certificateSha256": "551ea617a7bcd287ba83937793804c994519812761571a468dcc1b1a03e9e499",
+  "signing": "Android Debug / same as 0.1.0 and 0.2.0",
+  "flutterTests": 15,
+  "kotlinTests": 44,
+  "nativeIntegrationTests": 28,
+  "nativeIntegrationSdk": [
+    28,
+    35
+  ],
+  "robolectric": "4.16.1",
+  "lintErrors": 0,
+  "lintWarnings": 13,
+  "physicalDeviceVerified": false,
+  "schemaVersion": 1,
+  "buildSourceFilesCompared": 34
+}

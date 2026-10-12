@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.5.2">
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="        prefs(c).edit().putString(&quot;history&quot;, bounded.toString()).commit()"
+        errorLine2="                                                                 ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="25"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="            prefs(c).edit().putString(&quot;oneShots&quot;,JSONArray(oneShots).toString()).commit()"
+        errorLine2="                                                                                 ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="83"
+            column="82"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="        prefs(c).edit().putString(&quot;scheduled&quot;,successful.toString()).commit()"
+        errorLine2="                                                                     ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="104"
+            column="70"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="            prefs(c).edit().putString(&quot;deliveries&quot;,JSONArray(retained).toString()).putString(&quot;scheduled&quot;,&quot;[]&quot;).commit()"
+        errorLine2="                                                                                                               ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="139"
+            column="112"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="            .putString(&quot;oneShots&quot;,JSONArray(jsonList(array(c,&quot;oneShots&quot;)).filter { it.optString(&quot;fireKey&quot;)!=fireKey }).toString()).commit()"
+        errorLine2="                                                                                                                                   ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="143"
+            column="132"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="        prefs(c).edit().putString(&quot;oneShots&quot;,JSONArray(list).toString()).commit();reconcile(c)"
+        errorLine2="                                                                         ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="153"
+            column="74"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="        prefs(c).edit().putString(&quot;oneShots&quot;,JSONArray(jsonList(array(c,&quot;oneShots&quot;)).filter { it.optString(&quot;key&quot;)!=key &amp;&amp; it.optString(&quot;parentKey&quot;)!=key }).toString()).commit()"
+        errorLine2="                                                                                                                                                                        ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="156"
+            column="169"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="        prefs(c).edit().putString(&quot;skipped&quot;,JSONArray(skipped).toString()).commit();reconcile(c)"
+        errorLine2="                                                                           ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="181"
+            column="76"/>
+    </issue>
+
+    <issue
+        id="ApplySharedPref"
+        severity="Warning"
+        message="Consider using `apply()` instead; `commit` writes its data to persistent storage immediately, whereas `apply` will handle it in the background"
+        category="Correctness"
+        priority="6"
+        summary="Use `apply()` on `SharedPreferences`"
+        explanation="Consider using `apply()` instead of `commit` on shared preferences. Whereas `commit` blocks and writes its data to persistent storage immediately, `apply` will handle it in the background."
+        errorLine1="        prefs(c).edit().putString(&quot;state&quot;,root.toString()).commit();reconcile(c)"
+        errorLine2="                                                           ~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmHub.kt"
+            line="202"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="DataExtractionRules"
+        severity="Warning"
+        message="The attribute `android:dataExtractionRules` only applies for Android 12 and higher; since `minSdkVersion` is API 26 you should also set `android:fullBackupContent`"
+        category="Security"
+        priority="3"
+        summary="Missing data extraction rules"
+        explanation="Before Android 12, the attributes `android:allowBackup` and `android:fullBackupContent` were used to configure all forms of backup, including cloud backups, device-to-device transfers and adb backup.&#xA;&#xA;In Android 12 and higher, these attributes have been deprecated and will only apply to cloud backups. You should instead use the attribute `android:dataExtractionRules`, specifying an `@xml` resource that configures which files to back up, for cloud backups and for device-to-device transfers, separately. If your `minSdkVersion` supports older versions, you&apos;ll still want to specify an `android:fullBackupContent` resource if the default behavior is not right for your app."
+        url="https://developer.android.com/about/versions/12/backup-restore#xml-changes"
+        urls="https://developer.android.com/about/versions/12/backup-restore#xml-changes,https://goo.gle/DataExtractionRules"
+        errorLine1="        android:dataExtractionRules=&quot;@xml/data_extraction_rules&quot;"
+        errorLine2="                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\AndroidManifest.xml"
+            line="14"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="This folder configuration (`v21`) is unnecessary; `minSdkVersion` is 26. Merge all the resources in this folder into `drawable`."
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder.">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\res\drawable-v21"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.mipmap.ic_launcher` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\res\mipmap-hdpi\ic_launcher.png"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="                    badge.text = &quot;有期 · 正在响铃  /  $level 级&quot;"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="E:\android-toolchain\work\youqi-delivery-021-fix\android\app\src\main\kotlin\cn\youqi\youqi\AlarmActivity.kt"
+            line="55"
+            column="34"/>
+    </issue>
+
+</issues>

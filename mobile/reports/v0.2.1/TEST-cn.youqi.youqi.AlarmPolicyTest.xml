@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cn.youqi.youqi.AlarmPolicyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-12T04:00:48" hostname="STARYNAS" time="0.001">
+  <properties/>
+  <testcase name="quickSnoozesUseTheExplicitDelayAndCrossMidnight" classname="cn.youqi.youqi.AlarmPolicyTest" time="0.001"/>
+  <testcase name="staleOrMissingActionsNeverAffectTheNextQueuedAlarm" classname="cn.youqi.youqi.AlarmPolicyTest" time="0.0"/>
+  <testcase name="manualSnoozeIsAvailableWhileAutomaticRepeatHasALimit" classname="cn.youqi.youqi.AlarmPolicyTest" time="0.0"/>
+  <testcase name="firstAlarmStartsAtOneAndSnoozesDarkenToSeven" classname="cn.youqi.youqi.AlarmPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

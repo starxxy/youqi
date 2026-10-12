@@ -1,0 +1,21 @@
+# Local SDK paths, IDE files and rebuildable caches
+**/.dart_tool/
+**/.gradle/
+**/build/
+**/.idea/
+**/node_modules/
+*.iml
+*.log
+mobile/android/local.properties
+mobile/android/key.properties
+*.jks
+*.keystore
+*.pem
+*.key
+.env
+.env.*
+*.apk
+*.aab
+*.zip
+!installers/**
+!installers/**/*
